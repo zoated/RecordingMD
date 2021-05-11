@@ -44,3 +44,8 @@ loader 有三个属常用性：
 ![webpack打包后的文件](./image/7.jpg)  
 以上就是我学习webpack输出的文档，接下来深入webpack的学习主要是针对webapck提供的打包环节钩子的学习，尝试去做一些自定义的loader和plugins。
 
+### 参考配置
+1. [webpack 指南](hhttps://webpack.docschina.org/guides/)
+2. [webpack 概念](https://webpack.docschina.org/concepts/)
+3. [webpack 配置](https://webpack.docschina.org/configuration/)
+
