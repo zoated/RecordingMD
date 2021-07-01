@@ -26,7 +26,7 @@
 * RUN - 执行命令行命令。
 
 #### bosslist项目实现应用容器化
-bosslist使用shell脚本完成一键化部署，通过shell脚本打包项目代码、安装依赖，执行Dockerfile文件的指令构建镜像，打tag（如果不声明tag名称，会默认打上：latest tag,但也存在悬虚镜像（无tag镜像），就是构建新镜像时打一个已经存在的镜像，docker会移除存在相同tag镜像的tag,为新镜像打上tag，旧tag镜像就变成悬虚镜像），发布镜像。k8s完成容器的更新以及容器的运行。
+bosslist使用shell脚本完成一键化部署，通过shell脚本打包项目代码、安装依赖，执行Dockerfile文件的指令构建镜像，打tag（如果不声明tag名称，会默认打上：latest tag。也会出现悬虚镜像的情况（无tag镜像），就是构建新镜像时打一个已经存在的镜像，docker会移除存在相同tag镜像的tag,为新镜像打上tag，旧tag镜像就变成悬虚镜像），发布镜像。k8s完成容器的更新以及容器的运行。
 
 ```javascript
 echo "开始编译!"
